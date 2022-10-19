@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ClienteApp": {
+    "clienteApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ClienteApp:build:production"
+              "browserTarget": "clienteApp:build:production"
             },
             "development": {
-              "browserTarget": "ClienteApp:build:development"
+              "browserTarget": "clienteApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ClienteApp:build"
+            "browserTarget": "clienteApp:build"
           }
         },
         "test": {
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "41a51191-9864-44eb-9cef-afadfc58f4e0"
   }
 }
